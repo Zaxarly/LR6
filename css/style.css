@@ -1,0 +1,194 @@
+/* Загальні стилі */
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Стилі для верхнього меню */
+  .css-selector{
+    background: linear-gradient(314deg, #9489c5, #b871b3, #adb6d3, #cadea3, #f49fbe, #e2c4a2);
+    background-size: 1200% 1200%;
+
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    -o-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+  
+@keyframes rainbowShadow {
+  0% {
+    text-shadow: 0px 0px 20px #ff0000; /* Червоний */
+  }
+  14% {
+    text-shadow: 0px 0px 20px #ff7f00; /* Жовтогарячий */
+  }
+  28% {
+    text-shadow: 0px 0px 20px #ffff00; /* Жовтий */
+  }
+  42% {
+    text-shadow: 0px 0px 20px #00ff00; /* Зелений */
+  }
+  57% {
+    text-shadow: 0px 0px 20px #0000ff; /* Синій */
+  }
+  71% {
+    text-shadow: 0px 0px 20px #8b00ff; /* Індиго */
+  }
+  85% {
+    text-shadow: 0px 0px 20px #ff00ff; /* Фіолетовий */
+  }
+  100% {
+    text-shadow: 0px 0px 20px #ff0000; /* Червоний */
+  }
+}
+
+.navbar-brand {
+  text-shadow: 0px 0px 20px #00efff;
+  font-size: 1.5rem;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  animation: rainbowShadow 2.5s linear infinite;
+}
+  
+  .nav-link {
+    color: #fff !important;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .nav-link:hover {
+    color: #fff !important;
+    text-shadow: 0px 0px 20px #fff!important;
+  }
+  
+  /* Стилі для розділів */
+  .section {
+    padding: 80px 0;
+  }
+  
+  .section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  /* Стилі для фонового зображення */
+  .bg-image {
+    background-image: url('../img/background-mhdoyguhq3skloxt.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .bg-image h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .bg-image p {
+    font-size: 1.5rem;
+  }
+  
+  /* Стилі для розділів з контентом */
+  .content-section {
+    background-color: #f8f9fa;
+  }
+  
+  /* Кнопки */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+
+  .text-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+
+  h2{
+    animation: move-rtl 6000ms linear infinite;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 0.1px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    padding: 0.6rem;
+  }
+
+  @keyframes move-rtl {
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(-100%);
+    }
+  }
+
+  #panorama {
+    width: 100%;
+    height: 75vh;
+}
+
+#section3{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login_text{
+  padding: 10px;
+}
+
+.attention{
+  font-weight: bold;
+  font-family: cursive;
+  -webkit-text-stroke: 1px #217093;
+}
+
+@media screen and (max-width: 281px) {
+  .helper, .helper1{
+    visibility: hidden;
+  }
+}
