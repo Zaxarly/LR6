@@ -183,6 +183,16 @@ body {
 
 .attention{
   font-weight: bold;
+  font-family: cursive;
+  -webkit-text-stroke: 1px #217093;
+}
+
+@media screen and (max-width: 1025px) {
+  .attention{
+    font-weight: bold;
+    font-family: sans-serif;
+    -webkit-text-stroke: unset;
+  }
 }
 
 @media screen and (max-width: 281px) {
