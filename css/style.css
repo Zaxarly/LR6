@@ -183,7 +183,6 @@ body {
 
 .attention{
   font-weight: bold;
-  -webkit-text-stroke: 1px #217093;
 }
 
 @media screen and (max-width: 281px) {
